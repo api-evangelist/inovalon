@@ -1,8 +1,29 @@
 aid: inovalon
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/inovalon.png
 name: Inovalon
-description: 'Inovalon is a company surfaced as a portfolio company of insight-partners and added to the
-  API Evangelist network as a stub for enrichment. Sector: healthcare. This profile is a lead awaiting
-  the enrichment pipeline.'
+description: >-
+  Inovalon is a healthcare technology company providing cloud-based data analytics
+  and data-enabled intervention platforms for the healthcare industry. Its Inovalon
+  ONE Platform pairs national-scale primary-source datasets with analytics, workflow,
+  and SaaS applications used by health plans, providers, pharmacies, life-sciences,
+  and specialty organizations for risk adjustment, quality measurement, care-gap
+  closure, and revenue-cycle and claims management (including the ABILITY provider
+  workflow products). Inovalon was surfaced as a portfolio company of Insight Partners
+  and added to the API Evangelist network. Its developer surface is enterprise and
+  auth-gated: the corporate site is WAF-protected and the API host api.inovalon.com
+  requires authentication (HTTP 401); security and compliance posture is published on
+  the public Inovalon Trust Center.
 url: https://raw.githubusercontent.com/api-evangelist/inovalon/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,11 +33,31 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
 - Healthcare
-apis: []
+- Data Analytics
+- Cloud Platform
+- Risk Adjustment
+- Quality Measurement
+- Revenue Cycle
+- Claims Management
+- SaaS
+apis:
+- name: Inovalon API
+  description: >-
+    Authentication-gated API gateway host for the Inovalon ONE Platform. The host
+    responds with HTTP 401 to unauthenticated requests; no public OpenAPI or docs
+    surface was retrievable (corporate site is WAF-protected).
+  humanURL: https://www.inovalon.com/
+  baseURL: https://api.inovalon.com
+  tags:
+  - Healthcare
+  - Data Analytics
+  properties:
+  - type: Website
+    url: https://www.inovalon.com/
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
@@ -25,3 +66,18 @@ maintainers:
 common:
 - type: Website
   url: https://www.inovalon.com/
+- type: TrustCenter
+  url: security/inovalon-trust-center.yml
+- type: Compliance
+  url: https://trust.inovalon.com/
+- type: Conformance
+  url: conformance/inovalon-conformance.yml
+- type: DomainSecurity
+  url: security/inovalon-domain-security.yml
+- type: LLMsTxt
+  url: llms/inovalon-llms.txt
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence

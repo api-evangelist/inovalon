@@ -1,0 +1,24 @@
+generated: '2026-07-19'
+method: searched
+probe: true
+source: https://trust.inovalon.com/
+url: https://trust.inovalon.com/
+certifications:
+- HITRUST
+- PCI DSS v4.0.1
+- SOC 1 Type 2
+- SOC 2
+- SOC 2 Type 2
+compliance_programs:
+- HIPAA
+- Cloud Security Guidance
+responsible_disclosure: true
+evidence:
+- source: https://trust.inovalon.com/
+  keywords:
+  - hitrust
+  - soc 1 type 2
+  - soc 2 type 2
+  - pci dss v4.0.1
+  - responsible disclosure
+  - trust center

@@ -1,0 +1,33 @@
+generated: '2026-07-19'
+method: searched
+source: https://trust.inovalon.com/
+summary: >-
+  Inovalon is a healthcare data and cloud-platform company; conformance is
+  asserted from published certifications and compliance posture on the Inovalon
+  Trust Center. No public OpenAPI is available to derive protocol-level
+  conformance (API host api.inovalon.com is auth-gated, HTTP 401).
+standards:
+- id: hipaa
+  conforms: true
+  evidence: HIPAA compliance program published on trust.inovalon.com (covered entity / business associate)
+- id: hitrust
+  conforms: true
+  evidence: HITRUST certification listed on trust.inovalon.com
+- id: soc2-type2
+  conforms: true
+  evidence: SOC 2 Type 2 report listed on trust.inovalon.com
+- id: soc1-type2
+  conforms: true
+  evidence: SOC 1 Type 2 report listed on trust.inovalon.com
+- id: pci-dss
+  conforms: true
+  evidence: PCI DSS v4.0.1 listed on trust.inovalon.com
+- id: oauth2
+  conforms: unknown
+  evidence: API host api.inovalon.com returns HTTP 401; auth scheme not publicly documented
+- id: rfc9457-problem-details
+  conforms: unknown
+  evidence: no public OpenAPI or error reference retrievable (site behind WAF)
+- id: fhir-r4
+  conforms: unknown
+  evidence: not publicly documented on retrievable surfaces
