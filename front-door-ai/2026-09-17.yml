@@ -1,0 +1,31 @@
+# Front Door AI Index — inovalon — 2026-09-17
+# AI vocabulary counted on the provider's root page. Generated; do not edit.
+# `score` is null unless ownership is `own` — see front_door_ai.py.
+front_door_ai:
+  slug: inovalon
+  lexicon_version: '1.0'
+  probed_at: '2026-09-17'
+  host: www.inovalon.com
+  final_host: www.inovalon.com
+  ownership: own
+  owner: inovalon
+  shares_host_with: null
+  inherited_from: null
+  verdict: scored
+  score: 5
+  host_score: 5
+  density: 2.26
+  words: 2213
+  tiers:
+    agentic: 1
+    core: 4
+    model: 0
+  ambiguous: 10
+  top_terms:
+    intelligence: 7
+    AI: 3
+    AI agent: 1
+    agent: 1
+    automation: 1
+    machine learning: 1
+    predictive: 1
